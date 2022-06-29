@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+   
+<body style="background-color:black;">
+<title> Audio Recon</title>
+<h2><center><p style="color:white">Audio Clips</p></center></h2>
+<p style="color:white"> Visualised with Mozilla Firefox <a href="https://github.com/ARDISDataset"> GitHome </a>
+<table style="width:100%">
+<tr><td><h3 style = "color: white"> Gap length: 528.38 ms (4227 samples) </h3></td></tr>
+   <tr>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">Or</p></div></th>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">RegionDrop</p></div></th>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">HCR-RF</p></div></th>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">HCR-LSTM</p></div></th>
+	<th><div align="left" style="border:1px solid red"><p style="color:white">D2WGAN</p></div></th>
+	<tr> 
+    <td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/Original.mp3" type="audio/mp3"></td>
+	<td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/anchor.wav" type="audio/mp3"></td>
+	<td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/RF.wav" type="audio/mp3"></td>
+	<td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/LSTM.wav" type="audio/mp3"></td>
+    <td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/D2WGAN.mp3" type="audio/mp3"></td>
+	</tr>
+	
+	</tr> <tr>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">SG</p></div></th>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">wCP</p></div></th>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">SPAIN</p></div></th>
+	<th><div align="left" style="border:1px solid red"><p style="color:white">TDC</p></div></th>
+   </tr>
+
+   <tr>
+	<td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/SG.wav" type="audio/mp3"></td>
+	<td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/wCP.wav" type="audio/mp3"></td>
+	<td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/SPAIN.wav" type="audio/mp3"></td>
+	<td><audio controls><source src="https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/TDC.wav" type="audio/mp3"></td>
+   
+   </tr>
+
+</table>
+
+<p> </p> <br> <br> <br><font color = "white"> Comparison of the different methods (<font color = "red">red:</font> best, <font color = "pink"> pink </font>: second best). </font><br>
+
+
+<table style="width:30%">
+   <tr>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">Method/Metric</p></div></th>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">ODG</p></div></th>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">QC</p></div></th>
+    <th><div align="left" style="border:1px solid red"><p style="color:white">SNR</p></div></th>
+	<tr>
+    </tr><tr> <td> </td>
+
+	</tr><tr> <td style="color:white">Proposed-LSTM </td> <td style="color:pink"> -2.8165   </td> <td  style="color:white"> 0.8975 </td> <td  style="color:pink">14.5594 </td>
+	</tr><tr> <td style="color:white">Proposed-RF </td> <td style="color:red"> -2.0495 </td> <td style="color:pink"> 0.9905  </td> <td style="color:red"> 15.1293 </td>
+	</tr><tr> <td style="color:white">wCP </td> <td style="color:white"> -3.8945 </td> <td style="color:white"> 0.7598  </td> <td style="color:white"> 0.2623 </td>
+    </tr><tr> <td style="color:white">D2WGAN  </td> <td style="color:white"> -3.0884 </td> <td style="color:red">  0.9981 </td> <td style="color:white">  13.4703 </td>
+	</tr><tr> <td style="color:white">SG </td> <td style="color:white"> -3.7093 </td> <td style="color:white"> 0.9511  </td> <td style="color:white"> 3.2057 </td>
+	</tr><tr> <td style="color:white">SPAIN </td> <td style="color:white"> -3.8112 </td> <td style="color:white"> 0.8160  </td> <td style="color:white"> 0.8902</td>
+	</tr><tr> <td style="color:white">TDC </td> <td style="color:white"> -3.8851  </td> <td style="color:white"> 0.7846  </td> <td style="color:white"> 0.2749</td>
+
+
+	</tr>
+</table>
+<p> </p> 	
+<img src = "https://raw.githubusercontent.com/ardisdataset/ARMAS/master/VeryShort/Test1.png">
+</body>
+</html>
